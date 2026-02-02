@@ -13,5 +13,5 @@ module.exports = function (api) {
   // However, we do need to exclude @quasar/app-vite v2.4.0 and above, which uses Vite 7
   // We could have supported Vite 7 by forcing Vitest 3.2 usage,
   // but that would require to drop Node 18 due to `happy-dom` version bump, which requires Node 20+
-  api.compatibleWith('@quasar/app-vite', '^1.6.0 || >=2.0.0 <2.4.0');
+  api.compatibleWith('@quasar/app-vite', '^1.6.0 || >=2.0.0 <=2.4.0');
 };
